@@ -1,0 +1,25 @@
+git init 初始化 git，只有初始化了以后才可以使用 git 相关命令。
+git clone 获取远程项目，并下载到本地。远程库的地址在 GITHUB 项目中会有提供。
+git status 查看本地修改与服务器的差异。
+git add . 将这些差异文件添加，这样就可以提交了。
+git commit –m “这里是注释” 提交更改到服务器。
+git checkout master 更改到master库。
+git pull 将服务器最新的更改获取到本地。
+git merge local master 将本地的local合并到远程的master上。
+git push origin master 正式提交到远程的master服务器上。
+还有“git tag”，“git diff”，“git show”，“git log”，“git remote”等。
+error: remote origin already exists.	连接到远程仓库
+git remote remove origin		取消关联
+
+由于新建的远程仓库是空的，所以要加上-u这个参数
+git push -u origin master
+之后仓库不是空的，就不用加上-u
+git push origin master
+
+
+
+获取ssh密钥
+打开输入：ssh-keygen -t rsa -C “git账号”
+输入之后一路Enter（确认）就可以了
+
+密匙地址：C:\Users\86150\.ssh  里面的id_rsa.pub
